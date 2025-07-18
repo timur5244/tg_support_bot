@@ -115,7 +115,7 @@ async def handle_screenshot(update: Update, context: ContextTypes.DEFAULT_TYPE):
             caption=caption_text,
             parse_mode='HTML'
         )
-        await update.message.reply_text(f"Ваше обращение получено! Номер заявки:[{application_id}] \nВремя работы  технической поддержки пн-пт 12:00 до 16:00 Специалист свяжется с вами в ближайшее время!")
+        await update.message.reply_text(f"Ваше обращение получено! Номер заявки:[{application_id}] \nВремя работы  технической поддержки пн-пт 09:00 до 18:00 Специалист свяжется с вами в ближайшее время!")
         
         # Очистка состояния пользователя после завершения заявки
         del user_states[user_id]
